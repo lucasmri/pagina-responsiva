@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Responsive</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-header">
+                <a href="#"> <img
+                        src="data:image/png;base64,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"
+                        alt="Logo" class="logo">Your logo</a>
+                <span class="menu-icon-open"></span>
+            </div>
+
+            <ul class="menu">
+                <span class="menu-icon-close"></span>
+                <br>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Shop</a> </li>
+                <li> <a href="#">Contact</a> </li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <h1>Responsive Web Design</h1>
+        </section>
+    </header>
+
+    <main>
+        <section class="main-container">
+            <article>
+                <div class="main-container-content"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam, ullam tempore magni aperiam
+                    vero perspiciatis labore rerum quaerat! Inventore qui nesciunt, hic ex dicta porro harum! Illo,
+                    itaque quidem!</p>
+            </article>
+
+            <article>
+                <div class="main-container-content"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam, ullam tempore magni aperiam
+                    vero perspiciatis labore rerum quaerat! Inventore qui nesciunt, hic ex dicta porro harum! Illo,
+                    itaque quidem!</p>
+            </article>
+
+            <article>
+                <div class="main-container-content"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam, ullam tempore magni aperiam
+                    vero perspiciatis labore rerum quaerat! Inventore qui nesciunt, hic ex dicta porro harum! Illo,
+                    itaque quidem!</p>
+            </article>
+
+            <article>
+                <div class="main-container-content"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam, ullam tempore magni aperiam
+                    vero perspiciatis labore rerum quaerat! Inventore qui nesciunt, hic ex dicta porro harum! Illo,
+                    itaque quidem!</p>
+            </article>
+
+            <article>
+                <div class="main-container-content"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam, ullam tempore magni aperiam
+                    vero perspiciatis labore rerum quaerat! Inventore qui nesciunt, hic ex dicta porro harum! Illo,
+                    itaque quidem!</p>
+            </article>
+
+            <article>
+                <div class="main-container-content"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam, ullam tempore magni aperiam
+                    vero perspiciatis labore rerum quaerat! Inventore qui nesciunt, hic ex dicta porro harum! Illo,
+                    itaque quidem!</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido por <a href="https://github.com/lucasmri" target="_blank">lucasmri</a> </p>
+    </footer>
+</body>
+
+</html>

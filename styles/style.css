@@ -1,0 +1,220 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+.logo-header>a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.logo {
+    height: 50px;
+}
+
+.menu {
+    background-color: rgb(102, 170, 138);
+    box-shadow: 5px 5px 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 220px;
+    padding: 30px 10px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.menu>li>a {
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.menu>li>a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.menu-icon-open {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAATUlEQVR4nO3UsQ2AMAxE0b9DbBbJ/jtlg9AgipRIDkL8J119sosD/UkAvThtLT2AAczijKvrlhuLc726vfFqqVQ4IDgg0kPhgOCA6ItO7dG5Sg/BzkcAAAAASUVORK5CYII=");
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-icon-close {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAi0lEQVR4nO2Wuw3AIBBDvQDM547ts0NSRUikixAfgxss0b6H4DgOODEmOJgRwAUgCaWpMDO7GgK4RfJuFgXyYQYn5NMb5wBAdlXsACnroxkol7aAl0lrguXSP9E26ZcsesraJrWJ6ThqOoqLjudERwOho2XS8UnQ8S3SMQjQMfpE57AXhNKVzBM05QWoOUelu28NyQAAAABJRU5ErkJggg==");
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: rgb(102, 170, 138);
+    color: white;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px 25px;
+    margin: 0 auto;
+}
+
+.main-container>article {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.main-container-content {
+    background-color: gray;
+    height: 200px;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.main-container>article>p {
+    text-align: justify;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: rgb(102, 170, 138);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+footer>p {
+    width: 60%;
+}
+
+footer>p>a {
+    color: white;
+    text-decoration: none;
+    transition: .7s;
+}
+
+footer>p>a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+@media screen and (min-width: 430px) {
+    .hero>h1 {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .main-container {
+        max-width: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr 1fr;
+        max-width: none;
+    }
+
+    .hero {
+        font-size: 2em;
+    }
+
+    header>nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu-icon-open,
+    .menu-icon-close {
+        display: none;
+    }
+
+    .menu {
+        /* text-transform: uppercase; */
+        /* list-style: none; */
+        background-color: transparent;
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        position: static;
+        /* top: auto; */
+        /* right: auto; */
+        /* gap: 30px; */
+        padding: 0px;
+        height: auto;
+        width: auto;
+        /* transition: auto; */
+    }
+
+    .menu>li>a {
+        color: black;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .main-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hero {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main-container {
+        max-width: 1400px;
+    }
+
+    .main-container-content {
+        max-width: 650px;
+        min-height: 250px;
+    }
+
+}
