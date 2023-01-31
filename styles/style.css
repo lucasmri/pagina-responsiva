@@ -175,21 +175,14 @@ footer>p>a:hover {
     }
 
     .menu {
-        /* text-transform: uppercase; */
-        /* list-style: none; */
         background-color: transparent;
         box-shadow: none;
         display: flex;
         flex-direction: row;
-        /* align-items: center; */
         position: static;
-        /* top: auto; */
-        /* right: auto; */
-        /* gap: 30px; */
         padding: 0px;
         height: auto;
         width: auto;
-        /* transition: auto; */
     }
 
     .menu>li>a {
