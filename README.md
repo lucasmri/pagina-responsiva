@@ -4,6 +4,10 @@
 # Demonstração Visual
 ![Demonstração](https://github.com/user-attachments/assets/e8c3fcf0-4a19-4fd9-a257-ea3accb0bd03)
 
+## Acesse o projeto!
+
+Siga o link de deploy do projeto: https://github.com/lucasmri/pagina-responsiva
+
 # Stack utilizada
 
 **Front-end:** HTML5, CSS3 e JavaScript
