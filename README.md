@@ -6,7 +6,7 @@
 
 ## Acesse o projeto!
 
-Siga o link de deploy do projeto: https://lucasmri.github.io/pagina-responsiva/
+Siga o link de deploy do projeto: <a href="https://lucasmri.github.io/pagina-responsiva/" target="_blank">Página Responsiva</a>
 
 # Stack utilizada
 
